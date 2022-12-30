@@ -1,0 +1,37 @@
+<div class="container" style="margin: 15em auto;">
+	<div class="row">
+		<div class="col-6 offset-3">
+			<h2 style="font-family:Minerva Modern;">Modificar la noticia:</h2>
+			<form method="post" action="/admin/novedades/modificar"  enctype="multipart/form-data">
+				<input type="hidden" class="form-control" value="{{novedad.id}}" name="id">
+				<div class="form-group">
+					<input type="text" placeholder="Titulo" class="form-control" value="{{novedad.titulo}}" name="titulo">
+				</div>
+				<br>
+				<div class="form-group">
+					<textarea type="text" class="form-control" placeholder="Subtitulo" name="subtitulo">{{novedad.subtitulo}}</textarea>
+				</div>
+				<br>
+				<div class="form-group">
+					<textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo">{{novedad.cuerpo}}</textarea>
+				</div>
+				<br>
+				<div class="form-group" style="font-size: 1.2em; font-family: Minerva Modern;">
+					<p style="font-size: 0.9em;">
+						<label>Imagen: <input type="file" name="imagen" id="imagen" /></label>
+					</p>
+					<p style="font-size: 0.9em;">
+						<label><input type="checkbox" name="img_delete" id="img_delete" value="1">
+						¿Eliminar imagen actual?</label>
+						<input type="hidden" name="img_original" value="{{novedad.img_id}}">
+					</p>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-primary" style="margin-left: 15em; margin-rigth: 15em; background: darkolivegreen; border-color: darkolivegreen;">Modificar</button>
+				{{#if error}}
+				    <h4>{{message}}</h4>
+				{{/if}}
+			</form>
+		</div>
+	</div>
+</div>

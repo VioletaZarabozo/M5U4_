@@ -1,0 +1,66 @@
+<div class="container-nov" style="margin: 0;">
+	<div class="novedades-div">
+		<div class="col" style="margin-right: 3em; margin-top: 1em;">
+<h3 id="novedades-saludo">  Hola {{nombre}}! :)</h3>
+<br>
+	<a href="/admin/login/logout" class="text-right" id="btn-cerrar-sesion"> Cerrar sesión </a>
+
+    	</div>
+	</div>
+</div>
+
+
+
+
+<div class="row" style="margin-left: 3em; margin-top: 4em;">
+		<div class="col-6">
+			<h3 class="titulo-nov">Listado de Novedades</h3>
+		</div>
+		<div class="col-2 text-end">
+			<a href="/admin/novedades/agregar" class="bton-novedades"><i class="fa fa-plus"></i> Nuevo</a>
+		</div>
+		<div class="col-3 text-end">
+	        <form class="d-flex" role="search" action="/admin/novedades" method="get">
+    	        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="q">
+	            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+	        </form>
+            {{#if is_search}}
+                {{#unless novedades.length}}
+                <br>
+                <p style="font-size: 1.2em; text-align: center;">No se encontraron resultados de "<strong>{{q}}</strong>"</p>
+                {{/unless}}
+            {{/if}}
+        </div>
+</div>
+
+
+
+	<div class="row">
+		<div class="col">
+			<table class="table">
+				<thead class="thead-dark">
+					<tr class="lista-bd">
+						<th scope="col">#</th>
+						<th scope="col">TÍTULO</th>
+						<th scope="col">IMAGEN</th>
+						<th scope="col" class="text-center">ACCIONES</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each novedades}}
+					<tr>
+						<th scope="row">{{id}}</th>
+						<td>{{titulo}}</td>
+						<td>{{{imagen}}}</td>
+						<td class="text-center">
+							<a href="/admin/novedades/modificar/{{id}}" title="Editar" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
+							<a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+						</td>
+					</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<br>
+	<hr>

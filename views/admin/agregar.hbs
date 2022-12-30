@@ -1,0 +1,29 @@
+<div class="container" style="margin: 15em auto;">
+	<div class="row">
+		<div class="col-6 offset-3">
+			<h2 style="font-family:Minerva Modern;">Agregar una nueva noticia:</h2>
+			<form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data"/>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Titulo" name="titulo">
+				</div>
+				<br>
+				<div class="form-group">
+					<textarea type="text" class="form-control" placeholder="Subtitulo" name="subtitulo"></textarea>
+				</div>
+				<br>
+				<div class="form-group">
+					<textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
+				</div>
+				<div class="form-group">
+					<label>Imagen: <input type="file" name="imagen" id="imagen" /></label>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-primary" style="margin-left: 15em; margin-rigth: 15em; background: darkolivegreen; border-color: darkolivegreen;">Guardar</button>
+			</form>
+			<br>
+			{{#if error}}
+			    <h5 style="font-family: Minerva Modern; text-align:center;">{{message}}</h5>
+			{{/if}}
+		</div>
+	</div>
+</div>

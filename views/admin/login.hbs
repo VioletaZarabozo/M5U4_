@@ -1,0 +1,19 @@
+<form id="form-suscripcion-log" class="login-form" action="/admin/login"  method="post">
+	<div>
+		<h3>Suscribite para más info de lugares!</h3>
+		<h4 class="subtitle-form" class="col-1">Tu nombre</h4>
+		<input type="text" name="nombre" class="form-texto" placeholder="nombre" name="nombre">
+		<h4 class="subtitle-form">Mail:</h4>
+		<input type="email" name="mail" class="form-email" placeholder="hola@email.com" name="mail">
+		<h4 class="subtitle-form">Contraseña</h4>
+		<input type="password" name="password" class="form-texto" placeholder="******" name="password">
+		<br>
+		<button type="submit" class="form-button">SUSCRIBIRME♡</button>
+    </div>
+
+
+{{#if error}}
+  <p class="if-error">Tu datos o contaseña han sido incorrectos, vuelve a intentarlo.</p>
+{{/if}}
+
+</form>

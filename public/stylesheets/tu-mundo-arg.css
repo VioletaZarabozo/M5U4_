@@ -1,0 +1,780 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+  background: palegoldenrod;
+  max-width: 100%;
+}
+#nav-a{
+  font-family: SOFIA PRO;
+  font-size: 1.1em;
+  margin-top: -3.5em;
+  margin-right: 3em;
+  max-width: 6.5em;
+  height: 2.5em;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5em;
+  border:1.2px solid black;
+  background: lightgoldenrodyellow;
+}
+#nav-a:hover{
+  font-weight: bolder;
+  background: #B6CA87;
+  border: 1.7px solid #1A1919;
+}
+header{
+  z-index: 200;
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 7em;
+  background-image:linear-gradient(0deg, rgba(26, 25, 25, 0.3), rgba(26, 25, 25, 0.3)), url(../images/background-image.jpg);
+  background-size: cover;
+}
+nav div{
+  font-family: SOFIA PRO;
+  display: inline-flex;
+  text-align: center;
+  justify-content: flex-end;
+}
+h1{
+  font-size: 1.4em;
+  margin-top: 0.6em;
+  font-weight: bolder;
+  font-family: Lato;
+  text-align: center;
+  color: darkolivegreen;
+  border-radius: 5em;
+  border:1.2px solid black;
+}
+div h1{
+  margin-left: 2em;
+  margin-top: 1em;
+  font-weight: bolder;
+  background: lightgoldenrodyellow;
+  padding: 0.6em;
+  max-width: 7em;
+  border-radius: 10em 15em 10em 15em / 10em 5em 10em 5em;
+}
+h2{
+  font-family: Minerva Modern;
+  text-align: center;
+  color: darkolivegreen;
+}
+h3{
+  font-family: Minerva Modern;
+  text-align: center;
+}
+p{
+  font-size: 1em;
+  font-family: Minerva Modern;
+}/*
+img{
+  border-radius: 2em;
+}*/
+#form-suscripcion{
+  padding-top: 12.5em;
+  top: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: 38em;
+  background-image:linear-gradient(0deg, rgba(26, 25, 25, 0.3), rgba(26, 25, 25, 0.3)), url(../images/background-image.jpg);
+  background-size: cover;
+  background background-repeat: no-repeat;
+  background-position: center center;
+}
+#form-suscripcion div{
+  margin: -2.3em auto;
+  padding: 3em 1.5em;
+  width: 22.5em;
+  height: 22.5em;
+  border-radius: 3em;
+  background: RGBA(166, 138, 100, 0.70);
+  text-align: center;
+}
+#form-suscripcion-log{
+  padding-top: 12.5em;
+  max-width: 100%;
+  height: 39em;
+  background-image:linear-gradient(0deg, rgba(26, 25, 25, 0.3), rgba(26, 25, 25, 0.3)), url(../images/background-image.jpg);
+  background-size: cover;
+  background background-repeat: no-repeat;
+  background-position: center center;
+}
+#form-suscripcion-log div{
+  margin: -2em auto;
+  margin-top: -4em;
+  padding: 3em 1.5em;
+  padding-bottom: 23em;
+  width: 24.5em;
+  height: 24.5em;
+  border-radius: 3em;
+  background: RGBA(166, 138, 100, 0.70);
+  text-align: center;
+}
+#form-suscripcion-log h3{
+  color: #37511A;
+  font-weight: bolder;
+  font-size: 2em;
+  margin-top: -1em;
+  font-family: Minerva Modern;
+}
+.mensaje-form{
+  color: black;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+  font-family: Minerva Modern;
+}
+#form-suscripcion h3{
+  color: #37511A;
+  font-weight: bolder;
+  font-size: 2em;
+  margin-top: -1em;
+  font-family: Minerva Modern;
+}
+.form-texto{
+  border: 0;
+  border-radius: 2em;
+  margin: 0px auto;
+  font-family: Lato;
+  text-align: center;
+  max-width: 14.5em;
+}
+.subtitle-form-1{
+  font-family: SOFIA PRO;
+  color: palegoldenrod;
+  margin-top: 0.6em;
+  font-size: 1.3em;
+
+}
+.subtitle-form{
+  font-family: SOFIA PRO;
+  color: palegoldenrod;
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+.form-email{
+  border: 0;
+  margin: 0px auto;
+  font-family: Lato;
+  text-align: center;
+  max-width: 14.5em;
+  border-radius: 2em;
+}
+.form-button{
+  display: flex;
+  align-items: center;
+  color: darkolivegreen;
+  background: #deefb7;
+  border: 1.8px solid darkolivegreen;
+  border-radius: 1.5em;
+  margin: 0px auto;
+  margin-top: 1.5em;
+  padding: 1em 0.5em;
+  height: 2em;
+  max-width: 9.5em;
+  font-weight: bold;
+  font-family: SOFIA PRO;
+}
+.form-button:active{
+  font-weight: bolder;
+
+}
+.login-form{
+  margin-top: -0.6em;
+  padding-bottom: 4em;
+  margin-bottom: -2.5em;
+}
+#background-novedades{
+  padding-top: 3.5em;
+  padding-bottom: 10em;
+}
+#novedades{
+  max-width: 100%;
+  width: 60em;
+  border-radius: 5em;
+  margin: 0.3em auto;
+  margin-bottom: -3em;
+  padding: 2em 1.5em;
+  text-align: center;
+  background: #FDFFEF;
+  box-sizing: border-box;
+  border: 1.3px solid darkolivegreen;
+}
+#novedades h2{
+  font-family: Minerva Modern;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.lista-novedades{
+  list-style: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0.5em auto;
+}
+.lista-novedades a{
+  list-style: none;
+  text-decoration: none;
+  color: #14280C;
+}
+.lista-novedades a:hover{
+  color: black;
+}
+.lista-novedades li{
+  font-family: SOFIA PRO;
+  color: black;
+  text-decoration: none;
+}
+.lista-novedades img{
+  border-radius: 2.5em;
+}
+.container-nov{
+  display: flex;
+  justify-content: flex-end;
+  margin: 8em auto;
+  width: 100%;
+}
+#background-novedades .close{
+  border: 1.3px solid black;
+  margin-top: -2em;
+  border-radius: 1.5em;
+}
+#background-novedades .modal-dialog{
+  font-family: Minerva Modern;
+}
+.container-nov a{
+  font-family: Minerva Modern;
+  color: black;
+  font-size: 1.1em;
+}
+#btn-cerrar-sesion{
+  background: lightgoldenrodyellow;
+  color: black;
+  border: 1.8px solid darkolivegreen;
+  text-align: center;
+  border-radius: 4em;
+  padding: 2.3px 5px;
+  height: 1.5em;
+  width: 7em;
+  text-decoration: none;
+}
+.novedades-div{
+  margin-top: 7em;
+}
+.bton-novedades{
+  text-decoration: none;
+  color: black;
+  background: #B6CA87;
+  padding: 0.3em 0.5em;
+  border-radius: 8em;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: Minerva Modern;
+  border: 1.5px solid darkolivegreen;
+}
+.bton-novedades:hover{
+  color: white;
+  background: #B6CA87;
+} 
+.table{
+  border: 2.4px solid white;
+  max-width: 95%;
+  margin: 2.5em auto;
+  margin-bottom: 5em;
+  font-family: Minerva Modern;
+}
+.table a{
+  background: darkolivegreen;
+  color: lightgoldenrodyellow;
+}
+.lista-bd{
+  font-family: Minerva Modern;
+  color: darkolivegreen;
+  font-weight: bold;
+  background: lightgoldenrodyellow;
+  font-weight: bolder;
+  font-size: 1.3em;
+  max-width: 40em;
+  
+}
+.titulo-nov{
+  color: darkolivegreen;
+  font-family: Minerva modern;
+  font-weight: bolder;
+  font-size: 2.2em;
+}
+.if-error{
+  color: gold;
+  margin: 0 auto;
+  padding: 0 1em;
+  border-radius: 10em;
+  width: 20em;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+#introduccion{
+  margin-top: 4em;
+  max-width: 100%;
+}
+#introduccion h3{
+  width: 17em;
+  margin: 1em auto;
+  text-align: center;
+  font-weight: bolder;
+  border: 1.2px solid black;
+  border-radius: 5em;
+  background: lightgoldenrodyellow;
+  color: darkolivegreen;
+}
+#introduccion p{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 4em;
+}
+
+/*comienza desierto*/
+
+#desierto{
+    background: #F6FFD4;
+    max-width: 100%;
+    padding: 0 4em;
+    padding-top: 8em;
+}
+#desierto-in{
+  max-width: 100%;
+  background: #F6FFD4;
+  padding: 0 4em;
+  margin-top: 4em;
+}
+#texto-desierto{
+  padding: 1em 2em;
+}
+#texto-desierto h4{
+  font-family: Minerva Modern;
+  color: darkolivegreen;
+  font-weight: bolder;
+  padding-bottom: 1em;
+}
+#texto-desierto p{
+  font-family: Minerva Modern;
+  font-size: 1.2em;
+  color: black;
+}
+#title-desierto h3{
+  font-family: Minerva Modern;
+  color: darkolivegreen;
+  font-weight: bolder;
+  border-radius: 2em;
+  border: 1.3px solid black;
+  background: lightgoldenrodyellow;
+  text-align: center;
+  margin: 0.2em auto;
+  display: inline-flex;
+  justify-self: center;
+  justify-content: center;
+  max-height: 3em;
+  max-width: 12em;
+}
+.lista-desierto{
+    font-family: SOFIA PRO;
+    font-weight: 50;
+    font-size: 1.2em;
+    color: darkolivegreen;
+    display: inline-flex;
+    flex-direction: column;
+}
+#border-container img{
+  margin: 0.1em auto;
+}
+#border-container h4{
+    font-family: Lato;
+    font-weight: bolder;
+    max-width: 25em;
+    margin:0 auto;
+    margin-top: 0.5em;
+    height: 3em;
+    color: olivedrab;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: lightgoldenrodyellow;
+    border-radius: 3em;
+    font-size: 2em;
+}
+#img-desierto{
+  margin: 0 auto;
+}
+#img-desierto img{
+  border-radius: 1.5em;
+  margin-top: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 30em;
+  height: 15em;
+}
+#img-desierto div p{
+  color: black;
+  font-size: 1.1em;
+  margin-left: 5em;
+  margin-top: -4em;
+}
+#desierto-in{
+  padding: 1.5em 2em;
+}
+#desierto-in h3{
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  font-family: Minerva Modern;
+}
+#desierto-in p{
+  text-align: center;
+  color: black;
+  font-size: 1.2em;
+  font-family: Minerva Modern;
+}
+#desierto h3{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 2em;
+  border: 1.2px solid black;
+  border-radius: 5em;
+  background: lightgoldenrodyellow;
+  color: darkolivegreen;
+
+}
+#desierto h4{
+  font-weight: bold;
+  color: darkolivegreen;
+  font-family: Minerva Modern;
+  margin-bottom: 1.2em;
+}
+#desierto p{
+    color: black;
+    font-family: SOFIA PRO;
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    text-align: center;
+}
+.sabias-que-desierto{
+  text-align: center;
+  margin-top: 1.5em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+.sabias-que-desierto p{
+  font-family: SOFIA PRO;
+  font-size: 1.1em;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.sabias-que-desierto img{
+  width: 45em;
+  height: 35em;
+  margin-top: 1.5em;
+  border-radius: 3em;
+}
+.info-des{
+  font-family: Minerva Modern;
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: whitesmoke;
+  text-decoration: none;
+  background: darkolivegreen;
+  border: 1.3px solid black;
+  border-radius: 2em;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+  height: 3em;
+}
+.info-des:hover{
+  background: whitesmoke;
+  color: darkolivegreen;
+}
+
+/*finaliza desierto*/
+
+#bton-laguna{
+  padding-top: 2em;
+  padding-bottom: 2;
+  padding: 1.5em auto;
+  max-width: 100%;
+  background: #B6CA87;
+}
+#bton-laguna .informacion-lago{
+  color: black;
+  margin-bottom: 2em;
+  font-size: 1em;
+  margin: 1em auto;
+  font-family: Minerva Modern;
+  width: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3em;
+  text-decoration: none;
+  border: 1.2px solid black;
+  background: #deefb7;
+}
+#bton-laguna .informacion-lago:hover{
+    font-weight: bold;
+    background: whitesmoke;
+    color: darkolivegreen;
+}
+
+/*seccion campo*/
+
+#campo-in{
+  max-width: 100%;
+  padding: 0 4em;
+  margin-bottom: 3em;
+  text-align: center;
+  font-family: Minerva Modern;
+}
+#campo-in h4{
+  font-family: Lato;
+  font-weight: bolder;
+  color: olivedrab;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  font-size: 2.4em;
+}
+#campo{
+  max-width: 100%;
+  padding: 0 4em;
+  padding-top: 8em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+#campo h4{
+  font-family: Lato;
+  font-weight: bolder;
+  color: olivedrab;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  font-size: 2.4em;
+}
+.lista-campo{
+  font-family: SOFIA PRO;
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  list-style: none;
+  padding-right: 2em;
+  display: flex;
+  justify-content: flex-start;
+}
+#campo-in img{
+  position: center;
+  border-radius: 3em;
+  width: 20em;
+  height: 15em;
+}
+#campo img{
+  position: center;
+  border-radius: 3em;
+  width: 20em;
+  height: 15em;
+}
+.h3-campo{
+  margin: 0.4em auto;
+  width:20em;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3.5em;
+  text-align: center;
+  border: 1.2px solid black;
+  border-radius: 5em;
+  font-weight: bolder;
+  background: lightgoldenrodyellow;
+  color: darkolivegreen;
+}
+#campo p{
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: 1.2em;
+}
+#novedad-campo{
+  font-family: Minerva Modern;
+  padding: 0.5em 4em;
+}
+#novedad-campo p{
+  vertical-align: text-top;
+  font-size: 1.2em;
+  color: black;
+}
+#novedad-campo img{
+  width: 42em;
+  height: 11.5em;
+  padding-left: 0.5em;
+  border-radius: 3em;
+  list-style: none;
+  position: center;
+}
+#novedad-campo ul{
+  font-family: SOFIA PRO;
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  list-style: none;
+  padding-right: 2em;
+  display: flex;
+  justify-content: flex-start;
+}
+#novedad-campo ul p{
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+}
+#novedad-campo h3{
+  color: darkolivegreen;
+  font-weight: bolder;
+  font-size: 2.3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+#novedad-campo h5{
+  font-family: Minerva Modern;
+  color: goldenrod;
+  font-size: 1.7em;
+  padding-left: 3em;
+  font-weight: bold;
+}
+.texto-divide{
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: Minerva Modern;
+  font-size: 1.4em;
+  color: olivedrab;
+}
+hr{
+  width: 12em;
+  margin: 1em auto;
+}
+#mini-biografia{
+  padding: 2em;
+  font-family: Lato;
+  outline: 1.2px solid black;
+  background: whitesmoke;
+  border-radius: 3.5em;
+}
+#mini-biografia h3{
+  margin-left: 0.4em;
+  margin-bottom: 0.8em;
+  color: darkolivegreen;
+}
+#mini-biografia img{
+  display: flex;
+  margin-top: 0.5em;
+  width: 25em;
+  height: 10em;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+  margin: 0.3em;
+}
+#contacto{
+  margin: 2em auto;
+  font-family: Lato;
+  font-size: 1.5em;
+  max-width: 100%;
+  width: 26em;
+  height: 16em;
+  text-align: center;
+  background: lightgoldenrodyellow;
+  border-radius: 3em;
+  border: 2px double darkolivegreen;
+}
+#contacto h4{
+  color: darkolivegreen;
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  text-align: center;
+  padding-right: auto;
+  padding-left: auto;
+  font-weight: bolder;
+  font-family: SOFIA PRO;
+}
+.contacto-p1{
+  color: darkolivegreen;
+  font-size: 1.2em;
+  width: 14.5em;
+  border-radius: 1.5em;
+  margin: 0 auto;
+  font-weight: bold;
+  font-family: Minerva Modern;
+}
+.contacto-p1:hover{
+  background: darkolivegreen;
+  color: white;
+}
+.contacto-p2 p{
+  width: 9em;
+  border-radius: 1.5em;
+  margin: 0 auto;
+  margin-top: 0.3em;
+  font-family: Minerva Modern;
+  font-weight: bold;
+  color: darkolivegreen;
+  font-size: 1em;
+}
+.contacto-p2 p:hover{
+  background: darkolivegreen;
+  color: white;
+}
+.ig-contacto{
+  width: 7em;
+  padding: 0 0.5em;
+  padding-bottom: 0.2em;
+  margin: 1 auto;
+  margin-top: 0.3em;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: darkolivegreen;
+  border-radius: 1.5em;
+}
+.ig-contacto:hover{
+  color: white;
+  background: darkolivegreen;
+}
+#footer{
+  text-align: center;
+  height: 1.2em;
+  color: darkolivegreen;
+  background: whitesmoke;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;/*
+  margin-top: 2em;*/
+  padding-bottom: 1.5em;/*
+  padding-top: 0.5em;*/
+  max-width: 100%;
+}
